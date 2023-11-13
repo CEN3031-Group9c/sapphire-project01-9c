@@ -160,7 +160,6 @@ export default function StudentLogin() {
             Remove a student
           </button>
         </div>
-        {/*error && <div style={{ color: 'red' }}>{error}</div>*/}
         <button id='login-button' type='submit' onClick={handleLogin}>
           Enter
         </button>
