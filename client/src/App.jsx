@@ -19,9 +19,6 @@ import StudentLogin from './views/StudentLogin/StudentLogin';
 import ForgetPassword from './views/TeacherLogin/ForgetPassword';
 import ResetPassword from './views/TeacherLogin/ResetPassword';
 import TeacherLogin from './views/TeacherLogin/TeacherLogin';
-import Signup from './views/SignUp/Signup';
-import Help from './views/Help/Help';
-import FAQs from './views/FAQs/FAQs';
 
 const App = () => {
   return (
@@ -30,9 +27,6 @@ const App = () => {
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
         <Route path='/teacherlogin' element={<TeacherLogin />} />
-        <Route path='/signup' element={<Signup />} />
-        <Route path='/faqs' element={<FAQs />} />
-        <Route path='/help' element={<Help />} />
         <Route path='/forgot-password' element={<ForgetPassword />} />
         <Route path='/reset-password' element={<ResetPassword />} />
         <Route path='/login' element={<StudentLogin />} />

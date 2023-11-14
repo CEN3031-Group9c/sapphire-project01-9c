@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './StudentLogin.less';
-import Logo from '../../assets/CodeSparks_logo.png';
+import Logo from '../../assets/casmm_logo.png';
 import { getStudents, postJoin } from '../../Utils/requests';
 import StudentLoginForm from './StudentLoginForm';
 import { setUserSession } from '../../Utils/AuthRequests';
@@ -160,6 +160,7 @@ export default function StudentLogin() {
             Remove a student
           </button>
         </div>
+        {/*error && <div style={{ color: 'red' }}>{error}</div>*/}
         <button id='login-button' type='submit' onClick={handleLogin}>
           Enter
         </button>

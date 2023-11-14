@@ -1,5 +1,6 @@
 {
   "routes": {
+    "TeacherLogin": "/teacherlogin",
     "Sandbox": "/sandbox",
     "About": "/about",
     "Home": "/",
@@ -8,11 +9,7 @@
     "AccountInfo": "/account",
     "ContentCreatorDashboard": "/ccdashboard",
     "ResearcherDashboard": "/report",
-    "BugReport": "/bugreport",
-    "SignUp": "/signup",
-    "Help": "/help",
-    "FAQs": "/faqs",
-    "TeacherLogin": "/login"
+    "BugReport": "/bugreport"
   },
   "users": {
     "DefaultUser": ["Home", "TeacherLogin", "Sandbox", "About"],
