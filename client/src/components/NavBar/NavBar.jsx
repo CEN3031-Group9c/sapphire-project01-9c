@@ -1,7 +1,7 @@
 import React from 'react';
 import './NavBar.less';
 import config from './NavBarConfig.json';
-import Logo from '../../assets/casmm_logo.png';
+import Logo from '../../assets/CodeSparks_logo.png';
 import { Link, useNavigate } from 'react-router-dom';
 import { Menu, Dropdown } from 'antd';
 import { DownOutlined } from '@ant-design/icons';
@@ -25,7 +25,13 @@ export default function NavBar() {
 
   const shouldShowRoute = (route) => {
     if (currentRoute === routes[route]) return false;
-    return config.users[value.role].includes(route);
+    return (
+      config.users[value.role].includes(route) ||
+      (value.role === 'Teacher' && route === 'TeacherLogin') ||
+      (value.role === 'Student' && route === 'StudentLogin') ||
+      (value.role === 'Researcher' && route === 'ResearcherLogin') ||
+      (value.role === 'ContentCreator' && route === 'ContentCreatorLogin')
+    );
   };
 
   const menu = (
@@ -72,33 +78,6 @@ export default function NavBar() {
           &nbsp; Sandbox
         </Menu.Item>
       ) : null}
-      {shouldShowRoute('TeacherLogin') ? (
-        <Menu.Item
-          key='5'
-          onClick={() => handleRouteChange(routes.TeacherLogin)}
-        >
-          <i className='fa fa-sign-in-alt' />
-          &nbsp; User Login
-        </Menu.Item>
-      ) : null}
-      {shouldShowRoute('About') ? (
-        <Menu.Item key='6' onClick={() => handleRouteChange(routes.About)}>
-          <i className='fa fa-info-circle' />
-          &nbsp; About
-        </Menu.Item>
-      ) : null}
-      {shouldShowRoute('BugReport') ? (
-        <Menu.Item key='7' onClick={() => handleRouteChange(routes.BugReport)}>
-          <i className='fa fa-calendar-times' />
-          &nbsp; Report a Bug
-        </Menu.Item>
-      ) : null}
-      {shouldShowRoute('SignOut') ? (
-        <Menu.Item key='8' onClick={() => handleLogout()}>
-          <i className='fa fa-sign-out-alt' />
-          &nbsp; Sign Out
-        </Menu.Item>
-      ) : null}
     </Menu>
   );
 
@@ -118,8 +97,36 @@ export default function NavBar() {
             : '/'
         }
       >
-        <img src={Logo} id='casmm-logo' alt='logo' />
+        <img src={Logo} id='CodeSparks-logo' alt='logo' />
       </Link>
+      <div id='menu-links'>
+        <Link id='menu-link' to={routes.About}>
+          <i className='fa fa-info-circle' />
+          &nbsp; About
+        </Link>
+        {/* Add a link for "Help" */}
+        <Link id='menu-link' to={routes.Help}>
+          <i className='fa fa-question-circle' />
+          &nbsp; Help
+        </Link>
+        {/* Add a link for "FAQs" */}
+        <Link id='menu-link' to={routes.FAQs}>
+          <i className='fa fa-question-circle' />
+          &nbsp; FAQs
+        </Link>
+        <button
+          className="menu-button"
+          onClick={() => handleRouteChange(routes.TeacherLogin)}
+        >
+          Login
+        </button>
+        <button
+          className="menu-right-button"
+          onClick={() => handleRouteChange(routes.SignUp)}
+        >
+          SignUp
+        </button>
+      </div>
       <div id='dropdown-menu'>
         <Dropdown overlay={menu} trigger={['click']}>
           <button

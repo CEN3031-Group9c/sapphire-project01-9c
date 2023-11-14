@@ -11,12 +11,12 @@
   top: 0;
   z-index: 2;
   height: 8vh;
-  background-color: #colors[primary];
+  background-color: rgb(164, 152, 175);
   padding-right: 2vw;
 
-  -moz-box-shadow:    0 1px 5px -1px darken(#colors[primary], 90%);
-  -webkit-box-shadow: 0 1px 5px -1px darken(#colors[primary], 90%);
-  box-shadow:         0 1px 5px -1px darken(#colors[primary], 90%);
+  -moz-box-shadow:    0 1px 5px -1px darken(black, 90%);
+  -webkit-box-shadow: 0 1px 5px -1px darken(black, 90%);
+  box-shadow:         0 1px 5px -1px darken(black, 90%);
 
   #link {
     #casmm-logo {
@@ -30,9 +30,15 @@
 
 #menu-link {
   background: none !important;
-  border: none;
+  //border: solid;
   padding: 0 !important;
   display: inline-block;
+  color: darkblue;
+  font-size: 20px;
+
+  &.menu-link {
+    margin-left: 100px; /* Add right margin to create space between "About," "Help," and "FAQs" */
+  }
 
   &:focus {
     outline: none;
@@ -40,11 +46,39 @@
 
   &:hover {
     cursor: pointer;
+    color: white; 
+    }
+  }
+
+  .menu-button {
+    background: #3a86e3; /* Set the background color */
+    color: rgb(255, 255, 255); /* Set the text color */
+    border: solid;
+    padding: 5px 10px; /* Adjust padding as needed */
+    cursor: pointer;
+    margin-left: 700px;
+
+    &:hover {
+      background: #3a86e3; /* Change background color on hover */
+      color: white;
+    }
+  }
+
+.menu-right-button {
+  background: #3a86e3; /* Set the background color */
+  color: rgb(255, 255, 255); /* Set the text color */
+  border: solid;
+  padding: 5px 10px; /* Adjust padding as needed */
+  cursor: pointer;
+  
+  &:hover {
+    background: rgb(55, 16, 154); /* Change background color on hover */
+    color: white;
   }
 }
 
 .ant-dropdown-link {
-  color: #colors[tertiary];
+  color: black;
   background: none !important;
   border: none;
   padding: 0 !important;
@@ -54,7 +88,7 @@
   }
 
   &:hover {
-    color: #colors[secondary];
+    color: white;
     cursor: pointer;
   }
 }
