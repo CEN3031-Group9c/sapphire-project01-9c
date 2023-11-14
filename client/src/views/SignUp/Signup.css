@@ -1,0 +1,75 @@
+.signup-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    height: 50vh; /* Adjust the height as needed */
+    margin-top: 40px; /* Add margin from the top */
+  }
+  
+  .signup-image {
+    width: 100%;
+    max-width: 300px; /* Adjust the maximum width as needed */
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+    margin-bottom: 20px; /* Add some space between the image and the form */
+  } 
+
+  .signup-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input,
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: none;
+  }
+  
+  .signup-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    cursor: pointer;
+    font-family: "Alegreya", Juan Pablo del, Huerta Tipografica;
+  }
+  
+  .signup-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .page-wrapper {    
+    min-height: 100vh; /* Ensure the background color covers the entire viewport height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .container{
+    background-image: url('./Background.PNG'); /* Adjust the path to your image */
+    background-size: cover; /* This property scales the image to cover the entire container */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the image fixed within the container */
+  }
