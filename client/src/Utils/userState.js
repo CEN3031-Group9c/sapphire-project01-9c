@@ -1,32 +1,16 @@
 import { createGlobalState } from 'react-hooks-global-state';
 
-// Get the role of user from the session storage
+// Get the role of user from the local storage
 export const getCurrUser = () => {
-  const result = JSON.parse(sessionStorage.getItem('user'));
-  if (!result) {
-    return {
-      role: 'DefaultUser',
-    };
-  }
-  if (!result.role) {
-    return {
-      role: 'Student',
-    };
-  } else if (result.role.type === 'content_creator') {
-    return {
-      role: 'ContentCreator',
-      name: result.role.name,
-    };
-  } else if (result.role.type === 'researcher') {
-    return {
-      role: 'Researcher',
-      name: result.role.name,
-    };
-  } else if (result.role.type === 'authenticated') {
-    return {
-      role: 'Mentor',
-      name: result.role.name,
-    };
+  try {
+    const result = JSON.parse(localStorage.getItem('user'));
+    if (!result) {
+      return { role: 'DefaultUser' };
+    }
+    return result.role || { role: 'Student' };
+  } catch (error) {
+    // Handle JSON parse error if the item is not a valid JSON
+    return { role: 'DefaultUser' };
   }
 };
 
