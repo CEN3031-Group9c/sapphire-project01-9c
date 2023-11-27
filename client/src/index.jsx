@@ -3,11 +3,14 @@ import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 import './index.less';
 import * as serviceWorker from './serviceWorker';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { SettingsProvider } from './settingsContext';
 
 const container = document.getElementById("root")
 createRoot(container).render(
   <BrowserRouter>
-    <App />
+      <App />
   </BrowserRouter>
 )
 
