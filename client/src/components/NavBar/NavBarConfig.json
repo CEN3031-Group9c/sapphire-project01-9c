@@ -12,6 +12,7 @@
     "SignUp": "/signup",
     "Help": "/help",
     "FAQs": "/faqs",
+    "Settings": "/settings",
     "TeacherLogin": "/login"
   },
   "users": {
