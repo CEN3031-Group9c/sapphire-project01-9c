@@ -33,7 +33,7 @@
   border: solid;
   padding: 0 !important;
   display: inline-block;
-  color: darkblue;
+  color: black;
 
   &.menu-link {
     margin-left: 100px; /* Add right margin to create space between "About," "Help," and "FAQs" */
@@ -50,12 +50,13 @@
   }
 
   .menu-button {
-    background: rgb(209, 12, 203); /* Set the background color */
-    color: teal; /* Set the text color */
+    background: white; /* Set the background color */
+    color: black; /* Set the text color */
     border: solid;
     padding: 5px 10px; /* Adjust padding as needed */
     cursor: pointer;
-    margin-left: 900px;
+    margin-top: 0px;
+    margin-left: 80px;
 
     &:hover {
       background: rgb(55, 16, 154); /* Change background color on hover */
@@ -64,8 +65,8 @@
   }
 
 .menu-right-button {
-  background: rgb(209, 12, 203); /* Set the background color */
-  color: teal; /* Set the text color */
+  background: white; /* Set the background color */
+  color: black; /* Set the text color */
   border: solid;
   padding: 5px 10px; /* Adjust padding as needed */
   cursor: pointer;
@@ -90,4 +91,169 @@
     color: white;
     cursor: pointer;
   }
+}
+
+/* In FAQs.less */
+.faq-box {
+  max-width: 800px; /* Adjust the value as needed */
+  margin: 0 auto;  /* Center the box */
+  border: 1px solid #ccc;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: auto;  /* Add overflow property */
+  font-size: 18px; 
+}
+
+.faq-box ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.white-text {
+  color: white;
+}
+
+.faq-box li {
+  margin-bottom: 20px;
+}
+
+.faq-box strong {
+  color: #333;
+  font-weight: bold;
+}
+
+.faq-box p {
+  color: #666;
+}
+
+// In About.less
+.container {
+  background-color: #colors[primary];
+  height: 100%;
+  min-height: 100vh;
+  width: 100%;
+  min-width: 100vw;
+  text-align: center;
+}
+
+#about-content-container {
+  width: 99%;
+  background: #colors[tertiary];
+  border-radius: 20px;
+  border: 2px solid #colors[secondary];
+
+  #logos {
+    width: 50vw;
+    margin: auto;
+
+    img {
+      width: 20%;
+      height: auto;
+      margin: auto;
+    }
+  }
+
+  #title {
+    font-size: 5em;
+    color: darkblue;
+    margin-bottom: 0;
+  }
+
+  #secondary-title {
+    font-size: 2em;
+    color: #colors[text-primary];
+  }
+
+  #divider {
+    width: 95%;
+    height: 0;
+    border-bottom: 1px solid #colors[secondary];
+    opacity: 20%;
+  }
+
+  p {
+    font-size: 1.5em;
+    color: darkblue;
+  }
+}
+
+// In Home.less
+.container {
+  background-color: #colors[primary];
+  height: 100%;
+  min-height: 100vh;
+  width: 100%;
+  min-width: 100vw;
+  text-align: center;
+}
+
+#join-wrapper {
+  display: inline-block;
+}
+
+#box {
+  width: 300px;
+  background-color: #colors[tertiary];
+  text-align: center;
+  border-radius: 15px;
+  border: 4px solid;
+  border-color: #colors[secondary];
+}
+
+#box-title {
+  background-color: #colors[secondary];
+  border-radius: 80px;
+  width: 100%;
+  min-height: 8%;
+  color: #colors[text-secondary];
+  font-size: 1.5em;
+  font-weight: bold;
+  line-height: 50px;
+  text-align: center;
+}
+
+#box input[type='text'],
+#box input[type='email'],
+#box input[type='password'] {
+  display: block;
+  background: none;
+  border: 2px solid;
+  border-color: #colors[secondary];
+  width: 200px;
+  outline: none;
+  color: #colors[text-primary];
+  border-radius: 24px;
+  transition: 0.25s;
+}
+
+#box input[type='text']:focus,
+#box input[type='email']:focus,
+#box input[type='password']:focus {
+  width: 220px;
+}
+
+#box input[type='button'] {
+  background: darken(#colors[tertiary], 30%);
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  border: 2px solid;
+  border-color: #colors[secondary];
+  outline: none;
+  color: #colors[text-secondary];
+  font-size: 1.5em;
+  font-weight: 550;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.25s;
+  &:hover {
+    color: lighten(#colors[secondary], 20%);
+  }
+}
+
+#casmm-logo {
+  width: 300px;
+  height: auto;
 }
