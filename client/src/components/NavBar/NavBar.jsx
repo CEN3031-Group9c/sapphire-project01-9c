@@ -7,6 +7,7 @@ import { Menu, Dropdown } from 'antd';
 import { DownOutlined } from '@ant-design/icons';
 import { removeUserSession } from '../../Utils/AuthRequests';
 import { useGlobalState } from '../../Utils/userState';
+import Translation from '../Translation/Translation'
 
 export default function NavBar() {
   const [value] = useGlobalState('currUser');
@@ -120,6 +121,9 @@ export default function NavBar() {
       >
         <img src={Logo} id='casmm-logo' alt='logo' />
       </Link>
+      <div id='translation-menu'>
+        <Translation/>
+      </div>
       <div id='dropdown-menu'>
         <Dropdown overlay={menu} trigger={['click']}>
           <button
