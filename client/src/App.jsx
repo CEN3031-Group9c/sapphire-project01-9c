@@ -1,10 +1,7 @@
-import React from 'react';
 import React, { useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import PrivateRoute from './Utils/PrivateRoute';
 import { useGlobalState, setUserState, getCurrUser } from './Utils/userState';
-import { Route, Routes } from 'react-router-dom';
-import PrivateRoute from './Utils/PrivateRoute';
 import About from './views/About/About';
 import BlocklyPage from './views/BlocklyPage/BlocklyPage';
 import BugReport from './views/BugReport/BugReport';
@@ -23,11 +20,6 @@ import StudentLogin from './views/StudentLogin/StudentLogin';
 import ForgetPassword from './views/TeacherLogin/ForgetPassword';
 import ResetPassword from './views/TeacherLogin/ResetPassword';
 import TeacherLogin from './views/TeacherLogin/TeacherLogin';
-import Signup from './views/SignUp/Signup';
-import Help from './views/Help/Help';
-import FAQs from './views/FAQs/FAQs';
-import { SettingsProvider } from './settingsContext';
-import SettingsPage from './views/SettingsPage/SettingsPage';
 
 const App = () => {
   const [currUser] = useGlobalState('currUser');
@@ -41,7 +33,6 @@ const App = () => {
   }, []); // Empty array ensures this effect runs only once on mount
   return (
     <div>
-      <SettingsProvider>
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
@@ -133,9 +124,7 @@ const App = () => {
         />
         <Route path='/bugreport' element={<BugReport />} />
         <Route path='*' element={<NotFound/>} />
-        <Route path="/settings" element={<SettingsPage />} />
       </Routes>
-      </SettingsProvider>
     </div>
   );
 };
