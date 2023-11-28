@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { useSettings } from '../../settingsContext';
 import { Link } from 'react-router-dom';
+import Translation from '../../components/Translation/Translation'
 
 const HighVisibilityFont = ({ children }) => (
-  <span style={{ fontSize: '12pt', fontWeight: 'bold', color: '#000', marginRight: '20em', marginTop: '25em', backgroundColor: 'rgb(164, 152, 175)'}}>
+  <span style={{ padding: '10px', fontSize: '12pt', fontWeight: 'bold', color: '#000', marginRight: '20em', marginTop: '25em', backgroundColor: 'rgb(164, 152, 175)'}}>
     {children}
   </span>
 );
@@ -83,7 +84,7 @@ const SettingsPage = () => {
           ))}
         </select>
       </label>
-
+      
       <label>
         Font Size:
         <select
@@ -103,6 +104,9 @@ const SettingsPage = () => {
           onChange={(e) => setNewSettings({ ...newSettings, fontColor: e.target.value })}
         />
       </label>
+      <div id='translation-menu'>
+        <Translation/>
+      </div>
 
       <button onClick={handleSaveSettings}>Save Settings</button>
       </HighVisibilityFont>

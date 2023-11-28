@@ -1,7 +1,7 @@
 import React from 'react';
 import './NavBar.less';
 import config from './NavBarConfig.json';
-import Logo from '../../assets/casmm_logo.png';
+import Logo from '../../assets/CodeSparks_logo.png';
 import { Link, useNavigate } from 'react-router-dom';
 import { Menu, Dropdown } from 'antd';
 import { DownOutlined } from '@ant-design/icons';
@@ -9,7 +9,6 @@ import { removeUserSession } from '../../Utils/AuthRequests';
 import { useGlobalState } from '../../Utils/userState';
 import { Select } from 'antd'; 
 import { useSettings } from '../../settingsContext';
-import Translation from '../Translation/Translation'
 
 export default function NavBar() {
   const { Option } = Select;
@@ -257,6 +256,7 @@ export default function NavBar() {
           </button>
         </Dropdown>
       </div>
+      {/*
       <Select
         value={settings.fontSize}
         onChange={handleFontSizeChange}
@@ -297,6 +297,7 @@ export default function NavBar() {
           </Option>
         ))}
       </Select>
+      */}
     </span>
   );
 }
