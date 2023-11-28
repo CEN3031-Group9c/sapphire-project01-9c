@@ -256,7 +256,7 @@ export default function NavBar() {
           </button>
         </Dropdown>
       </div>
-      {/*
+      <div id="accessibility-options">
       <Select
         value={settings.fontSize}
         onChange={handleFontSizeChange}
@@ -297,7 +297,7 @@ export default function NavBar() {
           </Option>
         ))}
       </Select>
-      */}
+      </div>
     </span>
   );
 }

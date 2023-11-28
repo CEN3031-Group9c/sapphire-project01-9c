@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from "../../assets/casmm_logo.png";
+import Logo from "../../assets/CodeSparks_logo.png";
 import NavBar from "../../components/NavBar/NavBar";
 import { useSettings } from "../../settingsContext"; // Import the settings context
 import "../Help/Help.less";
