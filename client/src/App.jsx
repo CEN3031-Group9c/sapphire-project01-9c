@@ -1,4 +1,8 @@
 import React from 'react';
+import React, { useEffect } from 'react';
+import { Route, Routes } from 'react-router-dom';
+import PrivateRoute from './Utils/PrivateRoute';
+import { useGlobalState, setUserState, getCurrUser } from './Utils/userState';
 import { Route, Routes } from 'react-router-dom';
 import PrivateRoute from './Utils/PrivateRoute';
 import About from './views/About/About';
@@ -26,6 +30,15 @@ import { SettingsProvider } from './settingsContext';
 import SettingsPage from './views/SettingsPage/SettingsPage';
 
 const App = () => {
+  const [currUser] = useGlobalState('currUser');
+
+  useEffect(() => {
+    // Synchronize the global state with local storage on app start
+    const userFromStorage = getCurrUser(); // This should now check local storage
+    if (userFromStorage) {
+      setUserState(userFromStorage);
+    }
+  }, []); // Empty array ensures this effect runs only once on mount
   return (
     <div>
       <SettingsProvider>

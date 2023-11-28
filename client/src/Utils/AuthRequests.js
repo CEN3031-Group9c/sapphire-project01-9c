@@ -9,21 +9,21 @@ export const postUser = async (body) => {
   return response;
 };
 
-// return token from session storage
+// return token from local storage
 export const getToken = () => {
-  return sessionStorage.getItem('token') || null;
+  return localStorage.getItem('token') || null;
 };
 
-// remove the token ans user from the session storage
+// remove the token and user from the local storage
 export const removeUserSession = () => {
-  sessionStorage.removeItem('token');
-  sessionStorage.removeItem('user');
+  localStorage.removeItem('token');
+  localStorage.removeItem('user');
   setUserState(getCurrUser());
 };
 
-// set the token and user from the session storage
+// set the token and user from the local storage
 export const setUserSession = (jwt, user) => {
-  sessionStorage.setItem('token', jwt);
-  sessionStorage.setItem('user', user);
+  localStorage.setItem('token', jwt);
+  localStorage.setItem('user', JSON.stringify(user));
   setUserState(getCurrUser());
 };
