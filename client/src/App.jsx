@@ -19,10 +19,16 @@ import StudentLogin from './views/StudentLogin/StudentLogin';
 import ForgetPassword from './views/TeacherLogin/ForgetPassword';
 import ResetPassword from './views/TeacherLogin/ResetPassword';
 import TeacherLogin from './views/TeacherLogin/TeacherLogin';
+import Signup from './views/SignUp/Signup';
+import Help from './views/Help/Help';
+import FAQs from './views/FAQs/FAQs';
+import { SettingsProvider } from './settingsContext';
+import SettingsPage from './views/SettingsPage/SettingsPage';
 
 const App = () => {
   return (
     <div>
+      <SettingsProvider>
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
@@ -114,7 +120,9 @@ const App = () => {
         />
         <Route path='/bugreport' element={<BugReport />} />
         <Route path='*' element={<NotFound/>} />
+        <Route path="/settings" element={<SettingsPage />} />
       </Routes>
+      </SettingsProvider>
     </div>
   );
 };
