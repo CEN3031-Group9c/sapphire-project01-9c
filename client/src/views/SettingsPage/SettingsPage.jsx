@@ -2,12 +2,8 @@ import React, { useState } from 'react';
 import { useSettings } from '../../settingsContext';
 import { Link } from 'react-router-dom';
 import Translation from '../../components/Translation/Translation'
-
-const HighVisibilityFont = ({ children }) => (
-  <span style={{ padding: '10px', fontSize: '12pt', fontWeight: 'bold', color: '#000', marginRight: '20em', marginTop: '25em', backgroundColor: 'rgb(164, 152, 175)'}}>
-    {children}
-  </span>
-);
+import NavBar from "../../components/NavBar/NavBar";
+import './SettingsPage.less';
 
 const SettingsPage = () => {
   const { settings, updateSettings } = useSettings();
@@ -45,72 +41,67 @@ const SettingsPage = () => {
 
   return (
     <div className="container nav-padding">
-      <span id='navBar'>
-      <Link to="/" style={{ textDecoration: 'none', color: '#000', fontSize: '12pt', marginLeft: '40px' }}>
-        Home
-      </Link>
-      <Link to="/about" style={{ textDecoration: 'none', color: '#000', fontSize: '12pt', marginLeft: '40px' }}>
-        About
-      </Link>
-      <Link to="/help" style={{ textDecoration: 'none', color: '#000', fontSize: '12pt', marginLeft: '40px' }}>
-        Help
-      </Link>
-      <Link to="/faqs" style={{ textDecoration: 'none', color: '#000', fontSize: '12pt', marginLeft: '40px' }}>
-        FAQs
-      </Link>
-      <HighVisibilityFont>
-      <label>
-        Font Style:
-        <select
-          value={newSettings.fontStyle || settings.fontStyle}
-          onChange={(e) => setNewSettings({ ...newSettings, fontStyle: e.target.value })}
-        >
-          <option value="normal">Normal</option>
-          <option value="italic">Italic</option>
-          <option value="bold">Bold</option>
-        </select>
-      </label>
-
-      <label>
-        Font:
-        <select
-          value={newSettings.font || settings.font}
-          onChange={(e) => setNewSettings({ ...newSettings, font: e.target.value })}
-        >
-          {fontOptions.map((font, index) => (
-            <option key={index} value={font}>
-              {font}
-            </option>
-          ))}
-        </select>
-      </label>
-      
-      <label>
-        Font Size:
-        <select
-          value={newSettings.fontSize || settings.fontSize}
-          onChange={(e) => setNewSettings({ ...newSettings, fontSize: e.target.value })}
-        >
-          <option value="small">Small</option>
-          <option value="medium">Medium</option>
-          <option value="large">Large</option>
-        </select>
-      </label>
-      <label>
-        Font Color:
-        <input
-          type="color"
-          value={newSettings.fontColor || settings.fontColor}
-          onChange={(e) => setNewSettings({ ...newSettings, fontColor: e.target.value })}
-        />
-      </label>
-      <div id='translation-menu'>
-        <Translation/>
+      <NavBar/>
+      <div className="settings-container">
+        <div className="font-style">
+          <label>
+            Font Style:
+            <select
+              value={newSettings.fontStyle || settings.fontStyle}
+              onChange={(e) => setNewSettings({ ...newSettings, fontStyle: e.target.value })}
+            >
+              <option value="normal">Normal</option>
+              <option value="italic">Italic</option>
+              <option value="bold">Bold</option>
+            </select>
+          </label>
+        </div>
+        <div className="font">
+          <label>
+            Font:
+            <select
+              value={newSettings.font || settings.font}
+              onChange={(e) => setNewSettings({ ...newSettings, font: e.target.value })}
+            >
+              {fontOptions.map((font, index) => (
+                <option key={index} value={font}>
+                  {font}
+                </option>
+              ))}
+            </select>
+          </label>
+        </div>
+        <div className="font-size">
+        <label>
+          Font Size:
+          <select
+            value={newSettings.fontSize || settings.fontSize}
+            onChange={(e) => setNewSettings({ ...newSettings, fontSize: e.target.value })}
+          >
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+          </select>
+        </label>
+        </div>
+        <div class="font-color">
+          <label>
+            Font Color:
+            <input
+              type="color"
+              value={newSettings.fontColor || settings.fontColor}
+              onChange={(e) => setNewSettings({ ...newSettings, fontColor: e.target.value })}
+            />
+          </label>
+        </div>
+        <div id='translation-menu'>
+          <p>testing</p>
+          <Translation/>
+        </div>
+        <div class="save-settings-button">
+          <button onClick={handleSaveSettings}>Save Settings</button>
+        </div>
       </div>
-
-      <button onClick={handleSaveSettings}>Save Settings</button>
-      </HighVisibilityFont>
-    </span>
     </div>
   );
 };

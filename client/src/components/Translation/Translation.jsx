@@ -22,6 +22,6 @@ export default function Translation() {
   };
 
   return (
-    <div id="google_translate_element"></div>
+    <div id="google_translate_element">Translation:</div>
   );
 };

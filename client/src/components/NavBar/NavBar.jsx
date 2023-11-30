@@ -173,6 +173,25 @@ export default function NavBar() {
           &nbsp; Sign Out
         </Menu.Item>
       ) : null}
+      {shouldShowRoute('Help') ? (
+        <Menu.Item key='9' onClick={() => handleRouteChange(routes.Help)}>
+          <i className='fa fa-info-circle' />
+          &nbsp; Help
+        </Menu.Item>
+      ) : null}
+      {shouldShowRoute('FAQs') ? (
+        <Menu.Item key='10' onClick={() => handleRouteChange(routes.FAQs)}>
+          <i className='fa fa-info-circle' />
+          &nbsp; FAQs
+        </Menu.Item>
+      ) : null}
+      {shouldShowRoute('Settings') ? (
+        <Menu.Item key='11' onClick={() => handleRouteChange(routes.Settings)}>
+          <i className='fa fa-info-circle' />
+          &nbsp; Settings
+        </Menu.Item>
+      ) : null}
+      
     </Menu>
     );
       const handleFontSizeChange = (fontSize) => {
@@ -256,6 +275,7 @@ export default function NavBar() {
           </button>
         </Dropdown>
       </div>
+      {/*
       <div id="accessibility-options">
       <Select
         value={settings.fontSize}
@@ -298,6 +318,7 @@ export default function NavBar() {
         ))}
       </Select>
       </div>
+      */}
     </span>
   );
 }

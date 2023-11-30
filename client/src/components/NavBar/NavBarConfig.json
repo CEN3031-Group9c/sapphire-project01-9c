@@ -17,7 +17,7 @@
     "TeacherLogin": "/login"
   },
   "users": {
-    "DefaultUser": ["Home", "TeacherLogin", "Sandbox", "About"],
+    "DefaultUser": ["Home", "TeacherLogin", "Sandbox", "About", "Help", "FAQs", "Settings"],
     "Mentor": ["Dashboard", "AccountInfo", "SignOut", "Sandbox", "BugReport"],
     "Student": ["SignOut"],
     "ContentCreator": [
