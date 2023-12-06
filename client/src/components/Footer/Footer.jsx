@@ -9,9 +9,7 @@ import { Select } from 'antd';
 import { useSettings } from '../../settingsContext';
 
 
-//import { ImGithub } from "react-icons/im";
-//import { MdLocationOn } from "react-icons/md";
-//import { BsPersonFill, BsPaypal } from "react-icons/bs";
+import { ImGithub } from "react-icons/im";
 import uf_logo from "../../assets/uf_logo.png";
 import CodeSparks_logo from "../../assets/CodeSparks_logo.png";
 
@@ -26,7 +24,7 @@ const Footer = () => {
         <div id="logo_container">
           <img id="uf_logo" src={uf_logo} alt="uf" />
           <img id="code_sparks" src={CodeSparks_logo} alt="uf" />
-          {/*<ImGithub className="github" size={75} />*/}
+          <ImGithub className="github" size={75} />
         </div>
         <div>
           <h2 className="contact_title">Contact Us</h2>
