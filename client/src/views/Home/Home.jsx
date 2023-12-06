@@ -4,6 +4,7 @@ import NavBar from "../../components/NavBar/NavBar";
 import { useSettings } from "../../settingsContext"; // Import the settings context
 import "../Help/Help.less";
 import HomeJoin from "./HomeJoin";
+//import Footer from "../../components/Footer/Footer";
 
 const Home = () => {
   const { settings } = useSettings();
@@ -35,15 +36,26 @@ const Home = () => {
   };
 
   return (
-    <div className='container nav-padding'>        
-      <div style={joinWrapperStyle}>
-      <NavBar />
-      <div id='join-wrapper' style={secondJoinWrapperStyle}>
-        <img src={Logo} id='CodeSparks-logo' alt='logo'/>
-        <HomeJoin />
+    
+    <div>
+      
+      <div className='container nav-padding'>        
+        <div style={joinWrapperStyle}>
+        <NavBar />
+        <div id='join-wrapper' style={secondJoinWrapperStyle}>
+          <img src={Logo} id='CodeSparks-logo' alt='logo'/>
+          <HomeJoin />
+          </div>
         </div>
       </div>
+
+      {/* <div>
+        <Footer />
+
+      </div> */}
+
     </div>
+
   );
 };
 

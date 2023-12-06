@@ -24,6 +24,7 @@ import Help from './views/Help/Help';
 import FAQs from './views/FAQs/FAQs';
 import { SettingsProvider } from './settingsContext';
 import SettingsPage from './views/SettingsPage/SettingsPage';
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   return (
@@ -123,7 +124,9 @@ const App = () => {
         <Route path="/settings" element={<SettingsPage />} />
       </Routes>
       </SettingsProvider>
+      <Footer />
     </div>
+
   );
 };
 
