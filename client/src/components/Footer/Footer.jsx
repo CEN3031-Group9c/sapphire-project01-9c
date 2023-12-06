@@ -24,7 +24,9 @@ const Footer = () => {
         <div id="logo_container">
           <img id="uf_logo" src={uf_logo} alt="uf" />
           <img id="code_sparks" src={CodeSparks_logo} alt="uf" />
-          <ImGithub className="github" size={75} />
+          <a href="https://github.com/CEN3031-Group9c/sapphire-project01-9c">
+            <ImGithub className="github" size={75} />
+          </a>
         </div>
         <div>
           <h2 className="contact_title">Contact Us</h2>
