@@ -265,6 +265,7 @@ export default function NavBar() {
         <Select.Option value="small">Small</Select.Option>
         <Select.Option value="medium">Medium</Select.Option>
         <Select.Option value="large">Large</Select.Option>
+        <Select.Option value="larger">Larger</Select.Option>
       </Select>
       <Select
         value={settings.fontStyle}
