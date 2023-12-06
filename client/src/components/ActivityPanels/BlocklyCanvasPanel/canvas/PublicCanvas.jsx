@@ -184,7 +184,7 @@ export default function PublicCanvas({ activity, isSandbox }) {
                   </Col>
                   <Col flex='auto' />
 
-                  <Col flex={'200px'}>
+                  <Col flex={'50px'}>
                     <Row>
                       <Col className='flex flex-row'>
                         <button
@@ -234,7 +234,7 @@ export default function PublicCanvas({ activity, isSandbox }) {
                       </Col>
                     </Row>
                   </Col>
-                  <Col flex={'230px'}>
+                  <Col flex={'175px'}>
                     <div
                       id='action-btn-container'
                       className='flex space-around'

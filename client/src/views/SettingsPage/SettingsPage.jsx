@@ -95,7 +95,6 @@ const SettingsPage = () => {
           </label>
         </div>
         <div id='translation-menu'>
-          <p>testing</p>
           <Translation/>
         </div>
         <div class="save-settings-button">

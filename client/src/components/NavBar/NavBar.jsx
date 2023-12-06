@@ -254,6 +254,7 @@ export default function NavBar() {
         </Link>
         <button
           className="menu-button"
+          id="menu-button"
           onClick={() => handleRouteChange(routes.TeacherLogin)}
         >
           Login
@@ -275,7 +276,6 @@ export default function NavBar() {
           </button>
         </Dropdown>
       </div>
-      {/*
       <div id="accessibility-options">
       <Select
         value={settings.fontSize}
@@ -318,7 +318,6 @@ export default function NavBar() {
         ))}
       </Select>
       </div>
-      */}
     </span>
   );
 }
