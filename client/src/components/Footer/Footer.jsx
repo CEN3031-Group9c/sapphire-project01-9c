@@ -39,23 +39,6 @@ const Footer = () => {
             <p>e-mail: placeholder@gmail.com</p>
           </div>
         </div>
-        {/* <div>
-          <h2 className="profile_title">Profile</h2>
-          <div className="content_container">
-            <p className="profile_content">
-              <span className="text-lg">
-                <BsPersonFill />
-              </span>
-              My Profile
-            </p>
-            <p className="help_content">
-              <span className="text-lg">
-              <i className='fa fa-question-circle' />
-              </span>
-              Help & support
-            </p>
-          </div>
-        </div> */}
       </div>
     </div>
   );
