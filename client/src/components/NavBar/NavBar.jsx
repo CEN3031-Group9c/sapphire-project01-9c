@@ -103,33 +103,34 @@ export default function NavBar() {
   );
 
   return (
-    <span id='navBar'>
+      <nav id='navBar' role="navigation" aria-label="Main navigation">
       <Link
         id='link'
         to={
           value.role === 'ContentCreator'
-            ? '/ccdashboard'
-            : value.role === 'Mentor'
-            ? '/dashboard'
-            : value.role === 'Student'
-            ? '/student'
-            : value.role === 'Researcher'
-            ? '/report'
-            : '/'
+          ? '/ccdashboard'
+          : value.role === 'Mentor'
+          ? '/dashboard'
+          : value.role === 'Student'
+          ? '/student'
+          : value.role === 'Researcher'
+          ? '/report'
+          : '/'
         }
+        aria-label="Home"
       >
-        <img src={Logo} id='casmm-logo' alt='logo' />
+        <img src={Logo} id='casmm-logo' alt='CASMM logo' />
       </Link>
-      <div id='dropdown-menu'>
-        <Dropdown overlay={menu} trigger={['click']}>
-          <button
-            className='ant-dropdown-link'
-            onClick={(e) => e.preventDefault()}
-          >
-            {value.name ? value.name : 'Menu'} <DownOutlined />
-          </button>
-        </Dropdown>
-      </div>
-    </span>
+        <div id='dropdown-menu'>
+          <Dropdown overlay={menu} trigger={['click']}>
+            <button
+              className='ant-dropdown-link'
+              onClick={(e) => e.preventDefault()}
+            >
+              {value.name ? value.name : 'Menu'} <DownOutlined />
+            </button>
+          </Dropdown>
+        </div>
+      </nav>
   );
 }
