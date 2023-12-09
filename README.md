@@ -1,12 +1,12 @@
 Please provide the following information in your ReadMe file
 
-List of all project features implemented and associated screenshots of features developed
-Instructions for how to run the project locally 
-How to update database and server connections
-Update the database and STRAPI dump files in your file directory
-Outstanding work
-Built Upon
-Credit people/organizations you borrowed code from  or APIs you used - e.g., Bootstrap,  emails, authentication etc
+List of all project features implemented and associated screenshots of features developed </br>
+Instructions for how to run the project locally </br>
+How to update database and server connections</br>
+Update the database and STRAPI dump files in your file directory</br>
+Outstanding work</br>
+Built Upon</br>
+Credit people/organizations you borrowed code from  or APIs you used - e.g., Bootstrap,  emails, authentication etc</br>
 
 # CaSMM
 
