@@ -14,7 +14,7 @@ Cloud-based programming interface
 A) State Tracking  
 <p align="center">
   <a href="https://github.com/CEN3031-Group9c/sapphire-project01-9c/tree/testing-branch">
-    <img src="group-9c-images/A.PNG" alt=" State Tracking " width="150" height="150">
+    <img src="group-9c-images/A.PNG" alt=" State Tracking ">
   </a>
 </p>
 B) Allow option to remember login credentials on sign in  
