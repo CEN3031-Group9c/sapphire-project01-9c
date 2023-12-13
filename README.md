@@ -14,26 +14,73 @@ Cloud-based programming interface
 A) State Tracking  
 <p align="center">
   <a href="https://github.com/CEN3031-Group9c/sapphire-project01-9c/tree/testing-branch">
-    <img src="group-9c-images/A.PNG" alt=" State Tracking ">
+    <img src="group-9c-images/A.PNG" alt="State Tracking">
   </a>
 </p>
 B) Allow option to remember login credentials on sign in  
-
+<br/>
+See video walk through
+<br/>
+(https://drive.google.com/drive/folders/1bUR6YY55WtoKYku4DTaDlQ6UVCy6K3r6)
+<br/>
 C) Multi-Device Support  
-
+<p align="center">
+  <a href="https://github.com/CEN3031-Group9c/sapphire-project01-9c/tree/testing-branch">
+    <img src="group-9c-images/C.PNG" alt="Multi-Device Support">
+  </a>
+</p>
 D) Language Translation  
-
+<p align="center">
+  <a href="https://github.com/CEN3031-Group9c/sapphire-project01-9c/tree/testing-branch">
+    <img src="group-9c-images/D.PNG" alt="Language Translation">
+  </a>
+</p>
 E) Accessibility Options  
-
-F) Updated Landing page layout for better visualization  
-
-G) Accept user-input to change font size, style, and color  
-
+<p align="center">
+  <a href="https://github.com/CEN3031-Group9c/sapphire-project01-9c/tree/testing-branch">
+    <img src="group-9c-images/E.PNG" alt="Accessibility Options">
+  </a>
+</p>
+F) Accept user-input to change font size, style, and color  
+<p align="center">
+  <a href="https://github.com/CEN3031-Group9c/sapphire-project01-9c/tree/testing-branch">
+    <img src="group-9c-images/F1.PNG" alt="Font1">
+  </a>
+</p>
+<p align="center">
+  <a href="https://github.com/CEN3031-Group9c/sapphire-project01-9c/tree/testing-branch">
+    <img src="group-9c-images/F2.PNG" alt="Font2">
+  </a>
+</p>
+<p align="center">
+  <a href="https://github.com/CEN3031-Group9c/sapphire-project01-9c/tree/testing-branch">
+    <img src="group-9c-images/F3.PNG" alt="Font3">
+  </a>
+</p>
+G) Updated Landing page layout for better visualization  
+<p align="center">
+  <a href="https://github.com/CEN3031-Group9c/sapphire-project01-9c/tree/testing-branch">
+    <img src="group-9c-images/G.PNG" alt="Footer">
+  </a>
+</p>
 H) Add a footer for better site cohesion and style  
-
+<p align="center">
+  <a href="https://github.com/CEN3031-Group9c/sapphire-project01-9c/tree/testing-branch">
+    <img src="group-9c-images/H.PNG" alt="Footer">
+  </a>
+</p>
 I) Implementation of Help Page 
-
+<p align="center">
+  <a href="https://github.com/CEN3031-Group9c/sapphire-project01-9c/tree/testing-branch">
+    <img src="group-9c-images/I.PNG" alt="Help page">
+  </a>
+</p>
 J) Screen Reading    
+<p align="center">
+  <a href="https://github.com/CEN3031-Group9c/sapphire-project01-9c/tree/testing-branch">
+    <img src="group-9c-images/J.PNG" alt="Screen reading">
+  </a>
+</p>
 
 ## Installation 
 
@@ -70,6 +117,10 @@ HTML, CSS, React (JavaScript library)
 
 <br/>
 
+## Video walk through
+<br/>
+(https://drive.google.com/drive/folders/1bUR6YY55WtoKYku4DTaDlQ6UVCy6K3r6)
+<br/>
 ## Environments
 
 > The project is divided into three conceptual environments.
