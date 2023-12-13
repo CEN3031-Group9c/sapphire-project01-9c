@@ -1,13 +1,3 @@
-Please provide the following information in your ReadMe file
-
-List of all project features implemented and associated screenshots of features developed </br>
-Instructions for how to run the project locally </br>
-How to update database and server connections</br>
-Update the database and STRAPI dump files in your file directory</br>
-Outstanding work</br>
-Built Upon</br>
-Credit people/organizations you borrowed code from  or APIs you used - e.g., Bootstrap,  emails, authentication etc</br>
-
 # CaSMM
 
 > Computation and Science Modeling through Making
@@ -18,6 +8,15 @@ Cloud-based programming interface
 ![Deploy Production](https://github.com/STEM-C/CaSMM/workflows/Deploy%20Production/badge.svg)
 
 <br/>
+
+## Project Features
+
+## Installation 
+
+### Clone the repo
+git clone --branch testing-branch  https://github.com/CEN3031-Group9c/sapphire-project01-9c.git <br/>
+or <br/>
+git clone -b testing-branch  https://github.com/CEN3031-Group9c/sapphire-project01-9c.git <br/>
 
 ## Application
 
