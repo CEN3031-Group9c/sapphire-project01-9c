@@ -11,9 +11,36 @@ Cloud-based programming interface
 
 ## Project Features
 
+A) State Tracking  
+<p align="center">
+  <a href="https://github.com/CEN3031-Group9c/sapphire-project01-9c/edit/testing-branch">
+    <img src="group-9c-images/A.PNG" alt=" State Tracking " width="150" height="150">
+  </a>
+</p>
+B) Allow option to remember login credentials on sign in  
+
+C) Multi-Device Support  
+
+D) Language Translation  
+
+E) Accessibility Options  
+
+F) Updated Landing page layout for better visualization  
+
+G) Accept user-input to change font size, style, and color  
+
+H) Add a footer for better site cohesion and style  
+
+I) Implementation of Help Page 
+
+J) Screen Reading    
+
 ## Installation 
 
 ### Clone the repo
+<br/>
+ Clone the `testing-branch` of the repository at `https://github.com/CEN3031-Group9c/sapphire-project01-9c.git`. 
+<br/>
 ```bash
 git clone --branch testing-branch https://github.com/CEN3031-Group9c/sapphire-project01-9c.git
 ```
@@ -23,8 +50,10 @@ or
 ```bash
 git clone -b testing-branch https://github.com/CEN3031-Group9c/sapphire-project01-9c.git
 ```
-
- Clone the `testing-branch` of the repository at `https://github.com/CEN3031-Group9c/sapphire-project01-9c.git`. 
+## Built upon
+<br/>
+HTML, CSS, React (JavaScript library)
+<br/>
 
 ## Application
 
