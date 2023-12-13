@@ -1,9 +1,13 @@
-# CaSMM
+# CaSMM (CodeSparks)
 
 > Computation and Science Modeling through Making
 
 Cloud-based programming interface
-
+<p align="center">
+  <a href="https://github.com/CEN3031-Group9c/sapphire-project01-9c/tree/testing-branch">
+    <img src="group-9c-images/CodeSparks.PNG" alt="Logo">
+  </a>
+</p>
 ![Deploy Staging](https://github.com/STEM-C/CaSMM/workflows/Deploy%20Staging/badge.svg)
 ![Deploy Production](https://github.com/STEM-C/CaSMM/workflows/Deploy%20Production/badge.svg)
 
