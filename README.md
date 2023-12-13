@@ -24,7 +24,7 @@ or
 git clone -b testing-branch https://github.com/CEN3031-Group9c/sapphire-project01-9c.git
 ```
 
-This will clone the repository at `https://github.com/CEN3031-Group9c/sapphire-project01-9c.git` and switch to the `testing-branch`. Make sure that the branch name is correct and exists in the repository.
+ Clone the `testing-branch` of the repository at `https://github.com/CEN3031-Group9c/sapphire-project01-9c.git`. 
 
 ## Application
 
