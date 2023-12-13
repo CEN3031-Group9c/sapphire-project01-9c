@@ -129,6 +129,8 @@ NODE.js, REACT (JavaScript library), STRAPI, Blockly
 <br/>
 (https://drive.google.com/drive/folders/1bUR6YY55WtoKYku4DTaDlQ6UVCy6K3r6)
 <br/>
+
+
 ## Environments
 
 > The project is divided into three conceptual environments.
