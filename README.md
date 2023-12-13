@@ -14,9 +14,17 @@ Cloud-based programming interface
 ## Installation 
 
 ### Clone the repo
-git clone --branch testing-branch  https://github.com/CEN3031-Group9c/sapphire-project01-9c.git <br/>
-or <br/>
-git clone -b testing-branch  https://github.com/CEN3031-Group9c/sapphire-project01-9c.git <br/>
+```bash
+git clone --branch testing-branch https://github.com/CEN3031-Group9c/sapphire-project01-9c.git
+```
+
+or
+
+```bash
+git clone -b testing-branch https://github.com/CEN3031-Group9c/sapphire-project01-9c.git
+```
+
+This will clone the repository at `https://github.com/CEN3031-Group9c/sapphire-project01-9c.git` and switch to the `testing-branch`. Make sure that the branch name is correct and exists in the repository.
 
 ## Application
 
