@@ -107,7 +107,7 @@ git clone -b testing-branch https://github.com/CEN3031-Group9c/sapphire-project0
 ```
 ## Built upon
 <br/>
-HTML, CSS, React (JavaScript library)
+NODE.js, REACT (JavaScript library), STRAPI, Blockly
 <br/>
 
 ## Application
